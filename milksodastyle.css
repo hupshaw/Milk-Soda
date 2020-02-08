@@ -1,0 +1,524 @@
+
+
+body {
+  background: linear-gradient(35deg, #c4f1f2, #8fe4ea, #c4f1f2);
+	background-size: 500%;
+  max-width: 1366px;
+}
+
+.strawslidecontainer {
+  width: 1000px;
+}
+
+div.banner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  transform: scaley(.75);
+  position: absolute;
+  margin-top: -125px;
+  left: 20px;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: blenny, sans-serif;
+  font-weight: 400;
+  font-size: 48pt;
+  font-style: normal;
+  color: #f7a73c;
+  -webkit-text-fill-color: #f7a73c;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffe67b;
+}
+
+h2 {
+  font-family: blenny, sans-serif;
+  font-weight: 400;
+  font-size: 48pt;
+  font-style: normal;
+  color: #ea7657;
+}
+
+.title {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+p {
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #ea7657;
+  hyphens: none;
+}
+
+.subtitle {
+  float: left;
+  width: 32.5%;
+  text-align: justify;
+  margin-top: 125px;
+  margin-left: 100px;
+  line-height: 1.4;
+}
+
+#uppy {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+#strawslide {
+  animation-name: "strawslide";
+  animation: strawslide 2s;
+  -webkit-animation: strawslide 2s;
+  animation-timing-function: ease-out;
+}
+
+
+.textfade {
+  animation-name: "textfade";
+  animation: textfade 3s;
+  -webkit-animation: textfade 3s;
+  animation-timing-function: ease-out;
+}
+
+.bannerbutton {
+  background-color: white;
+  border: 3pt solid #8fe4ea;
+  display: inline-block;
+  width: auto;
+  position: relative;
+  padding: 5pt 10pt;
+  border-radius: 5pt;
+  margin-left: 85px;
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #ea7657;
+  hyphens: none;
+  text-decoration: none;
+}
+
+.bannerbutton:hover {
+  animation-name: "milkme";
+  animation: milkme .5s;
+  -webkit-animation: milkme .5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+div.navigation {
+  margin-left: 440px;
+  padding-top: 25px;
+}
+
+.snazzbutt {
+  display: inline-block;
+}
+
+.newssign {
+  position: absolute;
+  color:  #f7a73c !important;
+  margin-top: 300px;
+  margin-left: -407px;
+  width: 15%;
+  font-weight: 800;
+}
+
+.newsletter {
+  position: absolute;
+  margin-left: -250px;
+  margin-top: 235px;
+  z-index: 1;
+}
+
+.milkme {
+  text-decoration: none;
+  border-radius: 100%;
+  border: 10pt solid #8fe4ea;
+  width: 125px;
+  height: 125px;
+  background-color: #ea7657;
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18pt;
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.newsletter:hover {
+  animation-name: "milkme";
+  animation: milkme 1s;
+  -webkit-animation: milkme 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.lame {
+  background-color: #8fe4ea;
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+  position: relative;
+  left: 375px;
+  top: 225px;
+  z-index: 2
+}
+
+.recipetitle {
+  color: #ea7657!important;
+  position: relative;
+  margin-top: 1100px;
+  margin-right: 100px;
+  float: right;
+}
+
+
+#recipes {
+  position: relative;
+  margin-top: 1275px;
+  width: 80%;
+  text-align: center;
+}
+
+.recipecard {
+  background-color: #ffe67b;
+  border-radius: 15%;
+  height: 200px;
+  width: 150px;
+  border: 10pt solid #8fe4ea;
+  position: relative;
+  display: inline-block;
+  margin-left: 150px;
+  text-align: center;
+  vertical-align: top;
+  align-content: center;
+}
+
+img.recipephoto:hover {
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.recipephoto {
+  border: 10pt solid #f7a73c;
+  display: inline-block;
+  margin-left: -125px;
+  margin-top: -47px;
+  position: absolute;
+}
+
+.strawberryerror {
+  margin-left: -125px;
+  margin-top: -65px !important;
+  position: absolute;
+}
+
+.classicerror {
+  margin-left: -125px;
+  margin-top: -65px !important;
+  position: absolute;
+}
+
+img.recipephoto {
+  height: 180px;
+  width: 130px;
+  object-fit: cover;
+  align-content: center;
+  border-radius: 10%;
+}
+
+p.recipecopy {
+  position: absolute;
+  color: #f7a73c;
+  font-size: 14pt;
+  margin-top: 1225px;
+  text-align: right;
+  margin-left: 32%;
+}
+
+.recipe-align {
+  width: 100%;
+}
+
+.recipename {
+  font-weight: 800;
+  top: 20px;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+}
+
+.recipedesc {
+  font-weight: 400;
+  top: 20px;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+}
+
+#theory {
+  position: absolute;
+  width: 1000px;
+}
+
+#theorytitle {
+  position: absolute;
+  margin-top: 400px;
+  float: left;
+  width: 32.5%;
+  text-align: justify;
+  margin-left: 150px;
+  z-index: 3;
+  padding-top: 200px;
+}
+
+.carton {
+  position: absolute;
+  width: 100%;
+  float: right;
+  margin-left: 250pt;
+  margin-top: -50px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.speechbub {
+  position: absolute;
+  margin-top: 350px;
+  z-index: 2;
+}
+
+.grad {
+	animation-name: gradientshift;
+	animation: gradientshift 7s;
+	-webkit-animation: gradientshift 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+	z-index: 1;
+}
+
+.theorytext {
+  position: absolute;
+  margin-top: 725px;
+  margin-left: 150px;
+  z-index: 4;
+  width: 32.5%;
+  padding: 5px 10px 10px 10px;
+  color: #f7a73c !important;
+  font-weight: 600 !important;
+}
+
+.infobutton {
+  background-color: white;
+  border: 3pt solid #8fe4ea;
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  padding: 5pt 10pt;
+  border-radius: 5pt;
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #ea7657;
+  hyphens: none;
+  text-decoration: none;
+  margin-top: 825px;
+  margin-left: 360px;
+  z-index: 5;
+}
+
+#contact {
+  width: 75%;
+  position: relative;
+  padding: 5pt 10pt;
+  border-radius: 5pt;
+  margin-top: 150px;
+  text-align: center;
+  left: 100px;
+}
+
+.emailtext {
+  padding: 15px;
+  font-size: 18pt;
+  color: #f7a73c;
+}
+
+.emailprompt {
+  text-align: center;
+  float: center;
+  position: relative;
+  left: 275px;
+}
+
+.email {
+  transform: scale(2);
+  border: 2pt solid #f7a73c;
+  text-align: center;
+  font-size: 10pt;
+  position: relative;
+  float: center;
+  right: 50px;
+  margin-bottom: 50px;
+}
+
+#socials {
+  position: relative;
+  top: 0px;
+}
+.socialbutton {
+  display: inline-block;
+  position: relative;
+  width: 10%;
+  padding: 0px 100px 0px 75px;
+  overflow: hidden;
+  left: 40px;
+  right: 40px;
+}
+
+.email-submit {
+  transform: rotate(90deg);
+  width: 300px;
+  position: absolute;
+  margin: 15px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 200px;
+}
+
+@-webkit-keyframes gradientshift {
+	25% {
+		background-position: 0%, 50%
+	}
+	50% {
+		background-position: 100%, 50%
+	}
+	75% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientshift {
+
+	25% {
+		background-position: 0%, 50%;
+	}
+	50% {
+		background-position: 100%, 50%;
+	}
+	75% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes textfade {
+  0% {
+    scale: 0.9;
+    opacity: 0;
+  }
+  80% {
+    scale: 1.3;
+    opacity: .8
+  }
+  100% {
+    scale: 1;
+    opacity: 1.0;
+  }
+  }
+
+.title {
+  font-family: blenny, sans-serif;
+}
+
+@-webkit-keyframes textfade {
+  0% {
+    scale: 0.9;
+    opacity: 0;
+  }
+  80% {
+    scale: 1.3;
+    opacity: .8
+  }
+  100% {
+    scale: 1;
+    opacity: 1.0;
+}
+}
+
+@keyframes strawslide {
+  0% {
+    left: 1200px;
+  }
+  85% {
+    left: 0px;
+  }
+  100% {
+    left: 20px;
+
+  }
+}
+
+@-webkit-keyframes strawslide {
+  0% {
+    left: 1200px;
+  }
+  85% {
+    left: 0px;
+  }
+  100% {
+    left: 20px;
+
+  }
+}
+
+@keyframes milkme {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@-webkit-keyframes milkme {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 600px;
+  }
+  h1 {
+    line-height: 1.2;
+  }
+  div.navigation {
+    margin-right: 50px;
+  }
+  .snazzbutt {
+    float: right;
+    margin-left: 300px;
+    position: absolute;
+  }
+  .carton {
+    overflow: hidden;
+  }
+}
