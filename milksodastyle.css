@@ -444,6 +444,11 @@ p.recipecopy {
   font-family: blenny, sans-serif;
 }
 
+.socialbutton:hover {
+  transform: scale(1.5);
+  transition: 2s ease;
+}
+
 @-webkit-keyframes textfade {
   0% {
     scale: 0.9;
